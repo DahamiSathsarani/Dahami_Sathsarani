@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <!-- Link css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Js file -->
+	<script src="script.js"></script>
+
+    <!-- Link fonts -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Marck Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+
+    <!-- Link JQuery & Bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="@sweetalert2/theme-borderless/borderless.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("PWqMbCZs1-0kQpXGb");
+        })();
+    </script>
+
+</head>
+<body>
+
+    <section id = "nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class = "logo"> Portfolio </a>
+            <div class = "circle">
+                <div class = "dot"></div>
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Hire me</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+
+    <!-- Home section starts -->
+    <section class="section" id="home">
+        <div class="container-fluid" style="padding: 30px 8%;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <h3> Hi I'm </h3> 
+                        <h1> Dahami Sathsarani </h1>
+                        <p> <span>Web Developer and</span> <br>
+                        <span class="text">UI/UX Designer</span></p>
+
+                        <button> <a href = "Pdf/CV.pdf"> <i class="fa-solid fa-download"></i> My Resume </a></button>
+
+                        <div class = "icons">
+                            <a href="https://wa.me/+94768400936"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/DahamiSathsarani"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.instagram.com/dahamii._?igsh=MXdwbWZpNTJwYmYwMg=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/dahami-sathsarani-721587259/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src = "Images/home.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section starts -->
+    <section class="section" id = "about">
+        <div class="container-fluid" style="padding: 0 8%;">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src = "Images/about.jpg">
+                </div>
+                <div class="col-md-6">
+                    <div class = "content">
+                        <h1> About <span> Me </span> </h1>
+                        <p id = "about_text"> I am a Computer Science specialized undergraduate at <br>
+                            University of Sri Jayawardenepura. <br>
+                            An energetic and hardworking person who believes in <br> maintaining a high of dedication & commitment in all the duties engaged.<br>
+                            <span id="span"> I 
+                            have developed good communication & interpersonal 
+                            skills <br> through being responsible for carrying out several 
+                            projects in school. Capable of learning new things fast. </span>
+                            </p>
+                        <button id = "button" onclick = "addReadMoreListener()"> Read More </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section starts -->
+    <section class="section" id = "skills">
+        <div class = "heading"> 
+            <h1> My <span> Skills </span> </h1>
+        </div>
+        <div class="container-fluid" style="padding: 0 8%;">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="div">
+                        <h5>Languages</h5>
+                    </div>
+                    <div class = "content div1"> 
+                        <ul>
+                            <li> 
+                                <div class="col-md-3">
+                                    C
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "80"></div> </div>
+                                </div> 
+                            </li>
+                            <li> 
+                                <div class="col-md-3">
+                                    Java
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "45"></div> </div>
+                                </div>
+                            </li>   
+                            <li> 
+                                <div class="col-md-3">
+                                    HTML/CSS
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "65"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    JavaScript
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "50"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    PHP
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "40"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    Python
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "50"></div> </div> 
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    R
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "55"></div> </div>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="div">
+                        <h5>Software and Frameworks</h5>
+                    </div>
+                    <div class = "content div2">
+                        <ul>
+                            <li> 
+                                <div class="col-md-3">
+                                    NodeJS
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "70"></div> </div>
+                                </div> 
+                            </li>
+                            <li> 
+                                <div class="col-md-3">
+                                    ReactJS
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "55"></div> </div>
+                                </div>
+                            </li>   
+                            <li> 
+                                <div class="col-md-3">
+                                    Angular
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "45"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    Bootstrap
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "60"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    Codeigniter
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "60"></div> </div>
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    Django
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "30"></div> </div> 
+                                </div>
+                            </li> 
+                            <li> 
+                                <div class="col-md-3">
+                                    R Studio
+                                </div>
+                                <div class="col-md-9">
+                                    <div class = "lineBox"> <div class = "line" data-progress = "55"></div> </div>
+                                </div>
+                            </li> 
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section starts -->
+    <section class="section" id = "projects" >
+        <div class = "heading"> 
+            <h1> My <span> Projects </span> </h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/coffee.jpg" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> Coffee Shop Management System</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project1.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/restaurant.png" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> Restaurant Management System</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project2.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/recipeBook.jpg" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> Recipes Management System</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project3.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/school.png" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> School Management System</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project4.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/pet.jpg" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> Pet Finding Management System</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project5.html">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 card reveal">
+                        <img src="Images/home.jpg" class="card-img-top">
+                        <div class="card-data">
+                            <h2 class="card-title"> My Portfolio Web</h2>
+                            <span class="card-description"></span>
+                            <a class="card-button" href="Projects/project6.html">Read More</a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section starts -->
+    <section class="section" id = "contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class = "heading"> 
+                        <h1> Hire <span> Me </span> </h1>
+                    </div>
+                    <div class = "content div1">
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="details"><h3>0768400936</h3></div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="details"><h3>dahamisathsarani99@gmail.com</h3></div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="details"><h3>241/2,Samanabedda,Hanwella</h3></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class = "content div2">
+                        <form class = "contact_form" action="#">
+                            <input type = "text" id = "name" placeholder = "Your Name">
+                            <input type = "text" id = "email" placeholder = "Your Email">
+                            <input type = "text" id = "message" placeholder = "Message" class = "message">
+                            <button onclick = "sendEmail()">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

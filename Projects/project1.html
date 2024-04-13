@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!-- Link css file -->
+    <link rel="stylesheet" href="project.css">
+    <!-- Link Js file -->
+	<script src="project.js"></script>
+    <!-- Link fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Marck Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Link scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+
+    <!-- Home section starts -->
+    <section id = "home">
+        <div class="container">
+            <h2 class="header">Coffee Shop Management System</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="Images/coffee.jpg" alt="">
+                </div>
+                <div class="description">
+                    <p>
+                        The Coffee Shop Management System Frontend is a web application designed to streamline the management operations of a coffee shop. 
+                        Developed using plain HTML, CSS, and JavaScript, this frontend interface provides an intuitive user experience 
+                        for managing various aspects of the coffee shop.
+                    </p>
+                    <h3>Key Features</h3>
+                    <p>User-Friendly Interface</p>
+                    <p>Menu Management</p>
+                    <p>Order Management</p>
+                    <p>Responsive Design</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <div class="container">
+            <div class="content">
+                <div class="col-md-6 details order-md-1 order-2">
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">VSCode</a></li>
+                    <li><a href="">Figma</a></li>
+                </div>
+                <div class="col-md-6 title order-md-2 order-1">
+                    <h3>Languages <br> & <br> Technologies</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({ 
+        reset: true,
+        distance: '100px',
+        duration: 2500,
+        delay: 400
+        });
+
+        ScrollReveal().reveal('.header', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#home .image', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('#home .description', { delay: 800, origin: 'right' });
+        ScrollReveal().reveal('#technologies .details li', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('#technologies .title', { delay: 500, origin: 'right' });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    color: #fff;
+    background-color: #212737;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #0CFDA6;
+}
+
+.content{
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .content .image{
+    position: relative;
+    width: 800px;
+    height: 380px;
+    overflow: hidden;
+}
+
+#home .content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#home .content .description{
+    z-index: 222;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 3%;
+    max-width: 400px;
+    /* max-height: 380px; */
+    border: 1px soli rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 80px);
+}
+
+#home .content .description p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 0;
+}
+
+#home .content .description h3{
+    font-size: 20px;
+    margin: 3% 0;
+}
+
+#home .content .description a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 2% 0%;
+    color: #fff;
+    align-items: center;
+    transition: 1s ease;
+}
+
+#home .content .description a:hover{
+    color: #0CFDA6;
+}
+
+#technologies .details{
+    width: 400px;
+    margin-left: 50px;
+}
+
+#technologies .details li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#technologies .details li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#technologies .details li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+#technologies .details li:nth-child(1), #technologies .details li:nth-child(5){
+    padding-left: 100px;
+}
+
+#technologies .details li:nth-child(2), #technologies .details li:nth-child(4){
+    padding-left: 50px;
+}
+
+#technologies .title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #0CFDA6;
+
+}
+
+#technologies .title h3{
+    font-size: 40px;
+}
+
+@media (max-width: 767px) {
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #home .content .image{
+        width: 90%;
+        height: 300px;
+    }
+    
+    #home .content .description{
+        width: 600px;
+        margin-left: 70%;
+    }
+
+    #technologies .title{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    /* #home .content .image{
+        width: 500px;
+        height: 300px;
+    } */
+}
